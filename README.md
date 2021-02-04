@@ -40,7 +40,7 @@ import (
 )
 
 func main() {
-	reply, err := motanx.Call("127.0.0.1:33880", "hello", "Hello", "jack")
+	reply, err := motanx.Call("127.0.0.1:33880","", "hello", "Hello", "jack")
 	if err!=nil{
         panic(err)
     }
