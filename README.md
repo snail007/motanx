@@ -42,7 +42,7 @@ func main() {
 	if err!=nil{
 		panic(err)
 	}
-    fmt.Printf("result: %s",reply.(string))
+	fmt.Printf("result: %s",reply.(string))
 }
 ```
 
