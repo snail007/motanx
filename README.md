@@ -16,8 +16,8 @@ func main() {
 	server.AddService(&HelloService{}, "hello")
 	err := server.Start()
 	if err!=nil{
-        panic(err)
-    }   
+		panic(err)
+	}   
 }
 type HelloService struct {
 }
@@ -40,8 +40,8 @@ import (
 func main() {
 	reply, err := motanx.Call("127.0.0.1:33880","", "hello", "Hello", "jack")
 	if err!=nil{
-        panic(err)
-    }
+		panic(err)
+	}
     fmt.Printf("result: %s",reply.(string))
 }
 ```
