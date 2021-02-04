@@ -12,12 +12,12 @@ import (
 
 var client = NewMClient(5000)
 
-func Call(address string, service, method string, args ...interface{}) (reply interface{}, err error) {
-	return client.Call(address, "", service, method, args...)
+func Call(address string, authToken string, service, method string, args ...interface{}) (reply interface{}, err error) {
+	return client.Call(address, authToken, service, method, args...)
 }
 
-func CallTimeout(address string, service, method string, timeoutMilliseconds int, args ...interface{}) (reply interface{}, err error) {
-	return client.CallTimeout(address, "", service, method, timeoutMilliseconds, args...)
+func CallTimeout(address string, authToken string, service, method string, timeoutMilliseconds int, args ...interface{}) (reply interface{}, err error) {
+	return client.CallTimeout(address, authToken, service, method, timeoutMilliseconds, args...)
 }
 
 func Close() {

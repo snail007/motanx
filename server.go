@@ -93,7 +93,7 @@ motan-service:
 	}
 	s.msContext.Start(s.mFactory)
 	s.msContext.ServicesAvailable()
-	reply, err := CallTimeout("127.0.0.1:"+s.port, "motanx.hello", "Ping", 1000)
+	reply, err := CallTimeout("127.0.0.1:"+s.port, s.authToken, "motanx.hello", "Ping", 1000)
 	if err != nil {
 		return
 	}
