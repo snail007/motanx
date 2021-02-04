@@ -9,7 +9,6 @@ package main
 
 import (
 	"github.com/snail007/motanx"
-	"testing"
 )
 
 func main() {
@@ -35,8 +34,7 @@ package main
 
 import (
 	"fmt"
-"github.com/snail007/motanx"
-	"testing"
+    "github.com/snail007/motanx"
 )
 
 func main() {
