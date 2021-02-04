@@ -34,7 +34,7 @@ package main
 
 import (
 	"fmt"
-    "github.com/snail007/motanx"
+	"github.com/snail007/motanx"
 )
 
 func main() {
