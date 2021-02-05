@@ -23,6 +23,9 @@ func TestCall(t *testing.T) {
 	reply, err := motanx.Call("127.0.0.1:33880","token_secret", "hello", "Hello", "jack")
 	assert.Nil(err)
 	assert.Equal("hello jack", reply)
+	reply, err = motanx.Call("127.0.0.1:33880","token_secret", "hello", "Ping")
+	assert.Nil(err)
+	assert.True(reply.(bool))
 }
 
 type HelloService struct {
@@ -30,4 +33,8 @@ type HelloService struct {
 
 func (s *HelloService) Hello(name string) string {
 	return "hello " + name
+}
+
+func (s *HelloService) Ping() bool {
+	return true
 }
