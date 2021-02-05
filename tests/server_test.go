@@ -8,7 +8,7 @@ import (
 
 func TestServer(t *testing.T) {
 	assert := assert2.New(t)
-	server := motanx.NewMotanServer("33880", "")
+	server := motanx.NewMotanServer("33881", "")
 	server.AddService(&HelloService{}, "hello")
 	err := server.Start()
 	assert.Nil(err)
