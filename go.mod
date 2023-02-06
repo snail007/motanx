@@ -3,9 +3,13 @@ module github.com/snail007/motanx
 go 1.13
 
 require (
-	github.com/snail007/gmc v0.0.0-20210201024958-51dc8b862fe3
+	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/gomodule/redigo v2.0.0+incompatible // indirect
+	github.com/snail007/gmc v0.0.0-20230206035746-0feadd2a7a90
+	github.com/snail007/go-sqlcipher v0.0.0-20210114093415-fb27975e042f // indirect
 	github.com/stretchr/testify v1.7.0
 	github.com/weibocom/motan-go v0.0.0-20210129094724-c208e12f05e7
+	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 )
 
 replace (
